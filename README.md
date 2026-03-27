@@ -3,8 +3,8 @@ Hey
 🌈 Virtual TV Show: Disco City Live
 A multilingual chat‑rails experience in a fictional neon metropolis
 🪩 Overview
-Disco City Live is a virtual television experience built on a chat‑rails app, set inside a fictional disco city — a place that feels real, alive, and full of color, but exists only in our imagination.
-Users from around the world can join the show, chat in their own language, and interact through real‑time translation technologies.
+Disco City Live is a virtual television experience built on a chat‑rails app, set inside a fictional disco city — a place that feels real, alive, and full of color, and you must be present to experience the tv show.
+Users from around the world can join the show, chat in their own language, and interact through real‑time translation.
 It’s about learning languages, meeting people, being a foreigner, making friends, traveling, sharing hobbies, and maybe even connecting on a deeper level.
 🌍 Key Features
 🌐 Multilingual Chat (Real‑Time Translation)
