@@ -1,0 +1,393 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "change me",
+            "intents": [
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "HelloWorldIntent",
+                    "slots": [],
+                    "samples": [
+                        "hello",
+                        "how are you",
+                        "say hi world",
+                        "say hi",
+                        "hi",
+                        "say hello world",
+                        "say hello"
+                    ]
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.FallbackIntent",
+                    "samples": []
+                },
+                {
+                    "name": "LanguageLearning",
+                    "slots": [
+                        {
+                            "name": "person",
+                            "type": "AMAZON.FirstName"
+                        },
+                        {
+                            "name": "somebody",
+                            "type": "AMAZON.FirstName"
+                        },
+                        {
+                            "name": "language",
+                            "type": "AMAZON.Language"
+                        },
+                        {
+                            "name": "order",
+                            "type": "AMAZON.Ordinal"
+                        }
+                    ],
+                    "samples": [
+                        "i am learning how to speak {language} as a {order} language",
+                        "me and {somebody} are both bad at speaking {language} ",
+                        "i can speak {language} a {order} language",
+                        "i can speak fluent {language}",
+                        "this is {person} speaking and i'm better than {somebody} at speaking {language}",
+                        "this is {person} speaking and i'm better than {somebody} at {language}"
+                    ]
+                },
+                {
+                    "name": "Translator",
+                    "slots": [
+                        {
+                            "name": "person",
+                            "type": "AMAZON.FirstName"
+                        },
+                        {
+                            "name": "mylanguage",
+                            "type": "AMAZON.Language"
+                        },
+                        {
+                            "name": "spokenlanguage",
+                            "type": "AMAZON.Language"
+                        },
+                        {
+                            "name": "ablelanguage",
+                            "type": "AMAZON.Language"
+                        },
+                        {
+                            "name": "firstlanguage",
+                            "type": "AMAZON.FirstName"
+                        },
+                        {
+                            "name": "secondlanguage",
+                            "type": "AMAZON.Language"
+                        },
+                        {
+                            "name": "unablelanguage",
+                            "type": "AMAZON.Language"
+                        }
+                    ],
+                    "samples": [
+                        "i'm not proficient at all in {unablelanguage} please don't talk to me in that language",
+                        "for a demonstration i could be speaking {secondlanguage} but this is not the language i'm mostly gonna speak",
+                        "the first language i'm gonna speak throughout this tv set is most {firstlanguage}",
+                        "i can speak {ablelanguage} but translate everything to me in {mylanguage} this is {person} speaking",
+                        "this is {person} speaking i am most mostly gonna speak {spokenlanguage} on this tv set",
+                        "this is {person} speaking and translate to me everything all the people say in {mylanguage}"
+                    ]
+                },
+                {
+                    "name": "SecretIntent",
+                    "slots": [
+                        {
+                            "name": "truthordare",
+                            "type": "TruthordareType"
+                        },
+                        {
+                            "name": "secret",
+                            "type": "AMAZON.SearchQuery"
+                        }
+                    ],
+                    "samples": [
+                        "alright so truth or dare i'm choosing {truthordare} and i'm ready to test myself for that {secret}",
+                        "alright so truth or dare i'm choosing {truthordare} and my secret is the following {secret}",
+                        "alright so truth or dare i'm choosing {truthordare} and i want to tell you a secret {secret}"
+                    ]
+                },
+                {
+                    "name": "OtherSecret",
+                    "slots": [
+                        {
+                            "name": "personname",
+                            "type": "AMAZON.FirstName"
+                        },
+                        {
+                            "name": "secret",
+                            "type": "AMAZON.SearchQuery"
+                        }
+                    ],
+                    "samples": [
+                        "you know what my biggest secret ever is {secret}",
+                        "i must tell you a second secret it's about the latest thing i could do without having {personname} looking for me he she or anyone else by the way "
+                    ]
+                },
+                {
+                    "name": "PersonSecret",
+                    "slots": [
+                        {
+                            "name": "personname",
+                            "type": "AMAZON.FirstName"
+                        },
+                        {
+                            "name": "mysecret",
+                            "type": "AMAZON.SearchQuery"
+                        }
+                    ],
+                    "samples": [
+                        "i didn't confide in {personname} yet to tell  she {mysecret}",
+                        "i didn't confide in {personname} yet to tell  he {mysecret}"
+                    ]
+                },
+                {
+                    "name": "ProofOfLove",
+                    "slots": [
+                        {
+                            "name": "personname",
+                            "type": ""
+                        },
+                        {
+                            "name": "mysecret",
+                            "type": "AMAZON.SearchQuery"
+                        },
+                        {
+                            "name": "otherperson",
+                            "type": "AMAZON.FirstName"
+                        }
+                    ],
+                    "samples": [
+                        "did you mean what was my latest proof of love for {personname} that i shared my secret with {otherperson} ",
+                        "did you mean what was my latest proof of love for  {personname} that i shared my secret with him",
+                        "Did you mean what was my latest proof of love for  {personname} perhaps that i {mysecret}"
+                    ]
+                },
+                {
+                    "name": "PossibilitiesOfDating",
+                    "slots": [
+                        {
+                            "name": "someplace",
+                            "type": "AMAZON.CivicStructure"
+                        },
+                        {
+                            "name": "corporation",
+                            "type": "AMAZON.Corporation"
+                        },
+                        {
+                            "name": "newplace",
+                            "type": "AMAZON.LandmarksOrHistoricalBuildings"
+                        }
+                    ],
+                    "samples": [
+                        "don't talk to me about possibilities of dating in {newplace} it has failed so many times and how many landmark have i visited",
+                        "did you mean possibilities of dating at {corporation} i think they are limited",
+                        "did you mean how did i try to increase my possibilities of dating i may have tried to go to {someplace} what about you"
+                    ]
+                },
+                {
+                    "name": "StrongWishIntent",
+                    "slots": [
+                        {
+                            "name": "wish",
+                            "type": "AMAZON.SearchQuery"
+                        },
+                        {
+                            "name": "situationwished",
+                            "type": "AMAZON.SearchQuery"
+                        },
+                        {
+                            "name": "personname",
+                            "type": ""
+                        }
+                    ],
+                    "samples": [
+                        "How strong my heart is shows in how fiercely I long for things i the latest i wanted is {wish} and i think {personname} couldn't prevent that",
+                        "i'm kind of a fool but the real thing i would like is {situationwished}",
+                        "I don't often talk about my feelings like this but its how I really feel this is the latest thing i've really be noticing not that i wanted that situation {situationwished}",
+                        "I don't usually express things like this but the strength of my heart is measured by how deeply I want the things I care about well i guess my latest strongest wish is {wish} and i don't mean not to be kind this way"
+                    ]
+                },
+                {
+                    "name": "FamousArtist",
+                    "slots": [
+                        {
+                            "name": "artistname",
+                            "type": "AMAZON.Artist"
+                        }
+                    ],
+                    "samples": [
+                        "I feel like I'm channeling {artistname} today",
+                        "I look so much like {artistname} right now it's uncanny",
+                        "i'm feeling so much like the sosie of {artistname}",
+                        "if you mean the famous singer that i'm imitating well for me i think it's {artistname}"
+                    ]
+                },
+                {
+                    "name": "DisastrousCourtship",
+                    "slots": [
+                        {
+                            "name": "courtshipdetail",
+                            "type": "AMAZON.SearchQuery"
+                        },
+                        {
+                            "name": "personname",
+                            "type": "AMAZON.FirstName"
+                        },
+                        {
+                            "name": "whattodo",
+                            "type": "AMAZON.SearchQuery"
+                        }
+                    ],
+                    "samples": [
+                        "for a not too disastrous courtship the best thing to do is {whattodo} i think",
+                        "i think {personname} 's courtship is not so disastrous",
+                        "i'm so devastated by disastrous courtship i think the unhappy detail is when someone is doing {courtshipdetail} "
+                    ]
+                },
+                {
+                    "name": "PieceOfArt",
+                    "slots": [
+                        {
+                            "name": "pieceofart",
+                            "type": "AMAZON.CreativeWorkType"
+                        }
+                    ],
+                    "samples": [
+                        "one creative work type i like so much and i like to travel for i think is {pieceofart} "
+                    ]
+                }
+            ],
+            "types": [
+                {
+                    "name": "TruthordareType",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "dare"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "truth"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "dialog": {
+            "intents": [
+                {
+                    "name": "Translator",
+                    "confirmationRequired": false,
+                    "prompts": {},
+                    "slots": [
+                        {
+                            "name": "person",
+                            "type": "AMAZON.FirstName",
+                            "confirmationRequired": false,
+                            "elicitationRequired": false,
+                            "prompts": {}
+                        },
+                        {
+                            "name": "mylanguage",
+                            "type": "AMAZON.Language",
+                            "confirmationRequired": false,
+                            "elicitationRequired": false,
+                            "prompts": {}
+                        },
+                        {
+                            "name": "spokenlanguage",
+                            "type": "AMAZON.Language",
+                            "confirmationRequired": false,
+                            "elicitationRequired": false,
+                            "prompts": {}
+                        },
+                        {
+                            "name": "ablelanguage",
+                            "type": "AMAZON.Language",
+                            "confirmationRequired": false,
+                            "elicitationRequired": false,
+                            "prompts": {}
+                        },
+                        {
+                            "name": "firstlanguage",
+                            "type": "AMAZON.FirstName",
+                            "confirmationRequired": false,
+                            "elicitationRequired": false,
+                            "prompts": {}
+                        },
+                        {
+                            "name": "secondlanguage",
+                            "type": "AMAZON.Language",
+                            "confirmationRequired": false,
+                            "elicitationRequired": false,
+                            "prompts": {}
+                        },
+                        {
+                            "name": "unablelanguage",
+                            "type": "AMAZON.Language",
+                            "confirmationRequired": true,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "confirmation": "Confirm.Slot.1593537075480.1261664568173",
+                                "elicitation": ""
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "OtherSecret",
+                    "confirmationRequired": false,
+                    "prompts": {},
+                    "slots": [
+                        {
+                            "name": "personname",
+                            "type": "AMAZON.FirstName",
+                            "confirmationRequired": false,
+                            "elicitationRequired": false,
+                            "prompts": {}
+                        },
+                        {
+                            "name": "secret",
+                            "type": "AMAZON.SearchQuery",
+                            "confirmationRequired": false,
+                            "elicitationRequired": false,
+                            "prompts": {}
+                        }
+                    ]
+                }
+            ],
+            "delegationStrategy": "ALWAYS"
+        },
+        "prompts": [
+            {
+                "id": "Confirm.Slot.1593537075480.1261664568173",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "great i'm noting down everybody's preferences for the best quality of the tv show, so you're sure you can't speak {unablelanguage}"
+                    }
+                ]
+            }
+        ]
+    }
+}
